@@ -1,11 +1,17 @@
 import * as vscode from 'vscode';
+import { analyzeContent } from './analyzers/geminiAnalyzer';
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Congratulations, your extension "betterSEO" is now active!');
-	const disposable = vscode.commands.registerCommand('betterSEO.helloWorld', () => {
-		vscode.window.showInformationMessage('BetterSEO is Working!');
-	});
+  const disposable = vscode.workspace.onDidChangeTextDocument(async (event) => {
+    const document = event.document;
+    if (['html', 'vue', 'javascript', 'typescript'].includes(document.languageId)) {
+      const content = document.getText();
 
-	context.subscriptions.push(disposable);
+      await analyzeContent(content, document);
+    }
+  });
+
+  context.subscriptions.push(disposable);
 }
-export function deactivate() {};
+
+export function deactivate() {}
