@@ -3,6 +3,8 @@
   "displayName": "betterSEO",
   "description": "A VS Code extension to improve SEO workflows.",
   "version": "0.0.1",
+  "type": "module",
+  "publisher": "calebkalejaiye",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -50,7 +52,10 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
     "betterseo": "file:",
-    "betterSEO": "file:"
+    "betterSEO": "file:",
+    "dotenv": "^16.4.7"
   }
 }
