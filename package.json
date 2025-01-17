@@ -9,12 +9,18 @@
   "categories": [
     "Other"
   ],
+  "activationEvents": [
+  "onLanguage:html",
+  "onLanguage:javascript",
+  "onLanguage:typescript",
+  "onLanguage:vue"
+],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "betterSEO.helloWorld",
-        "title": "Hello World"
+        "title": "BetterSEO"
       }
     ]
   },
