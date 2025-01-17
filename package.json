@@ -3,7 +3,6 @@
   "displayName": "betterSEO",
   "description": "A VS Code extension to improve SEO workflows.",
   "version": "0.0.1",
-  "type": "module",
   "publisher": "calebkalejaiye",
   "engines": {
     "vscode": "^1.96.0"
