@@ -10,11 +10,11 @@
     "Other"
   ],
   "activationEvents": [
-  "onLanguage:html",
-  "onLanguage:javascript",
-  "onLanguage:typescript",
-  "onLanguage:vue"
-],
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:vue"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
@@ -50,6 +50,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "betterseo": "file:",
     "betterSEO": "file:"
   }
 }
