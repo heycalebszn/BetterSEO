@@ -20,8 +20,9 @@
   "contributes": {
     "commands": [
       {
-        "command": "betterSEO.helloWorld",
-        "title": "BetterSEO"
+        "command": "extension.analyzeSeo",
+        "title": "Analyze SEO",
+        "category": "SEO"
       }
     ]
   },
