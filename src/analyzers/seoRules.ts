@@ -1,4 +1,4 @@
-import  as vscode from 'vscode';
+import * as vscode from 'vscode';
 
 export function validateSeoTags(content: string): vscode.Diagnostic[] {
   const diagnostics: vscode.Diagnostic[] = [];
