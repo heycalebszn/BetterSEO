@@ -1,9 +1,9 @@
 {
-  "name": "betterseo",
-  "displayName": "betterSEO",
+  "name": "BetterSEO",
+  "displayName": "Better SEO",
   "description": "A VS Code extension to improve SEO workflows.",
   "version": "0.0.1",
-  "publisher": "calebkalejaiye",
+  "publisher": "CalebKalejaiye",
   "engines": {
     "vscode": "^1.96.0"
   },
